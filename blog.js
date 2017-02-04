@@ -1,3 +1,3 @@
-module.styleByPath('https://fonts.googleapis.com/icon?family=Material+Icons').then(main=>
-    document.head.appendChild(main)
+module.getByPath('https://fonts.googleapis.com/icon?family=Material+Icons').then(s=>
+    this._style(document.createTextNode(s))
 )
